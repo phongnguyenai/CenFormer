@@ -21,13 +21,17 @@ To make predictions, follow these steps:
 
 3. Run the following command to perform predictions:
 
-```
+    ```
     python predict.py --cate airplane --pretrained pretrained/PCN/CenFormer/best.pt
+    ```
 
-    --cate (str) categories, such as airplane, cabinet, car, chair, lamp, sofa, table, watercraft.
-    
-    --pretrained (str) path to the pretrained model.
-```
+    where,
+
+   ```
+   --cate (str) categories, such as airplane, cabinet, car, chair, lamp, sofa, table, watercraft.
+   
+   --pretrained (str) path to the pretrained model.
+   ```
 
 ![plot](./figs/visualization.png)
 
@@ -43,21 +47,25 @@ To train the model, you need to follow these steps:
 
 4. To initiate the training process, execute the following command:
 
-```
-    python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
+   ```
+   python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
+   ```
 
-    --pretrained (str) path to the pretrained model.
+   where,
     
-    --car (bool) only use the CAR category for training.
+   ```
+   --pretrained (str) path to the pretrained model.
     
-    --batch-size (int) batch size.
+   --car (bool) only use the CAR category for training.
     
-    --model-name (str) name of the model.
+   --batch-size (int) batch size.
     
-    --epoch (int) number of epochs.
+   --model-name (str) name of the model.
     
-    --num-pred (int) number of the points in the final point cloud.
-```
+   --epoch (int) number of epochs.
+    
+   --num-pred (int) number of the points in the final point cloud.
+   ```
     
 ## References
 
