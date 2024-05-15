@@ -12,7 +12,6 @@ from models.CenFormer import CenFormer
 from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--mode", help="train or test", default="train")
 parser.add_argument("--pretrained", help="pth file", default="")
 parser.add_argument("--car", help="True or False", default=False)
 parser.add_argument("--batch-size", help="Batch size", default=8)
@@ -138,7 +137,9 @@ model_config.sparse_expansion_lambda = 0.5
 model_config.dense_expansion_lambda = 1.2
 
 model = CenFormer(model_config).cuda()
-# model.load_state_dict(torch.load("trained_models/PCN/CenFormerCar/CenFormerCar_epoch_400_train_0.0050273350_val_0.0002298486.pt"))
+
+if args.pretrained != "":
+    model.load_state_dict(torch.load(args.pretrained))
 
 # optimizer
 ChamferDisL2 = ChamferDistanceL2()
@@ -153,24 +154,23 @@ torch.set_num_threads(24)
 if not os.path.exists(f"pretrained/PCN/{model_name}"):
     os.makedirs(f"pretrained/PCN/{model_name}")
     
-if args.mode == "train":
-    scheduler = StepLR(optimizer, step_size=40, gamma=0.7)
-    # Start training
-    for epoch in range(int(args.epoch)):
-    # for epoch in range(401, int(args.epoch)):
-        
-        train_loss = train(epoch)
-        print('Epoch {:03d}, Training loss: {:.10f}'.format(epoch, train_loss))
-        with open(f'./pretrained/PCN/{model_name}/{model_name}_train_loss.txt', 'a') as f:
-            f.write('Epoch {:03d}, Training loss: {:.10f} \n'.format(epoch, train_loss))
-                
-        if epoch%50==0:
-            eval_loss = evaluation()
-            print('Epoch {:03d}, Evaluation loss: {:.10f}'.format(epoch, eval_loss))
+scheduler = StepLR(optimizer, step_size=40, gamma=0.7)
+# Start training
+for epoch in range(int(args.epoch)):
+# for epoch in range(401, int(args.epoch)):
+    
+    train_loss = train(epoch)
+    print('Epoch {:03d}, Training loss: {:.10f}'.format(epoch, train_loss))
+    with open(f'./pretrained/PCN/{model_name}/{model_name}_train_loss.txt', 'a') as f:
+        f.write('Epoch {:03d}, Training loss: {:.10f} \n'.format(epoch, train_loss))
+            
+    if epoch%50==0:
+        eval_loss = evaluation()
+        print('Epoch {:03d}, Evaluation loss: {:.10f}'.format(epoch, eval_loss))
 
-            str_loss = "Epoch {:03d} - Training loss: {:.10f} - Validation loss: {:.10f} \n".format(epoch, train_loss, eval_loss)
-            with open(f'./pretrained/PCN/{model_name}/{model_name}_train_loss.txt', 'a') as f:
-                f.write(str_loss)
-                torch.save(model.state_dict(),'./pretrained/PCN/{}/{}_epoch_{}_train_{:.10f}_val_{:.10f}.pt'.format(model_name, model_name, epoch,train_loss,eval_loss))
-                
-        scheduler.step()
+        str_loss = "Epoch {:03d} - Training loss: {:.10f} - Validation loss: {:.10f} \n".format(epoch, train_loss, eval_loss)
+        with open(f'./pretrained/PCN/{model_name}/{model_name}_train_loss.txt', 'a') as f:
+            f.write(str_loss)
+            torch.save(model.state_dict(),'./pretrained/PCN/{}/{}_epoch_{}_train_{:.10f}_val_{:.10f}.pt'.format(model_name, model_name, epoch,train_loss,eval_loss))
+            
+    scheduler.step()

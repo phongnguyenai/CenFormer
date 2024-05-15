@@ -20,7 +20,7 @@ To make predictions, follow these steps:
 3. Run the following command to perform predictions:
 
     ```bash
-    python predict.py
+    python predict.py --cate <category> --pretrained <path to the pretrained model>
     ```
 
 ## Training
@@ -36,7 +36,7 @@ To train the model, you need to follow these steps:
 4. To initiate the training process, execute the following command:
 
     ```bash
-    python train.py
+    python train.py --pretrained <path to the pretrained model> --car <Only use CAR category for training> --batch-size <batch size> --model-name <name of the model> --epoch <Number of epochs> --num-pred <number of predicted points>
     ```
 
 ## References
