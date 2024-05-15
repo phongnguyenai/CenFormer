@@ -1,2 +1,3 @@
 Epoch 000, Training loss: 0.0087036057 
 Epoch 000 - Training loss: 0.0087036057 - Validation loss: 0.0177204404 
+Epoch 001, Training loss: 0.0068388627 
