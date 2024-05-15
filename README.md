@@ -23,10 +23,16 @@ To make predictions, follow these steps:
 
     ```bash
     python predict.py --cate airplane --pretrained pretrained/PCN/CenFormer/best.pt
+
     ```
+
+```
 --cate (str) categories, such as airplane, cabinet, car, chair, lamp, sofa, table, watercraft.
 
 --pretrained (str) path to the pretrained model.
+```
+
+![plot](./figs/visualization.png)
 
 ## Training
 
@@ -43,6 +49,7 @@ To train the model, you need to follow these steps:
     ```bash
     python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
     ```
+```
 --pretrained (str) path to the pretrained model.
 
 --car (bool) only use the CAR category for training.
@@ -54,6 +61,7 @@ To train the model, you need to follow these steps:
 --epoch (int) number of epochs.
 
 --num-pred (int) number of the points in the final point cloud.
+```
     
 ## References
 
