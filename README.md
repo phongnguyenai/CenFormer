@@ -25,7 +25,7 @@ To make predictions, follow these steps:
     python predict.py --cate airplane --pretrained pretrained/PCN/CenFormer/best.pt
     ```
 
-    where
+    Parameters:
 
    ```
    --cate (str) categories, such as airplane, cabinet, car, chair, lamp, sofa, table, watercraft.
@@ -51,7 +51,7 @@ To train the model, you need to follow these steps:
    python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
    ```
 
-   where
+   Parameters:
     
    ```
    --pretrained (str) path to the pretrained model.
