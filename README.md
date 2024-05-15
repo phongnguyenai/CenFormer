@@ -23,7 +23,7 @@ To make predictions, follow these steps:
 
     ```
     python predict.py --cate airplane --pretrained pretrained/PCN/CenFormer/best.pt
-    ```,
+    ```
 
     where
 
@@ -49,7 +49,7 @@ To train the model, you need to follow these steps:
 
    ```
    python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
-   ```,
+   ```
 
    where
     
