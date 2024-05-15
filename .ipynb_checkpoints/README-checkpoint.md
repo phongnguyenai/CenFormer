@@ -1,6 +1,6 @@
 # CenFormer: Transformer-based Network from Centroid Generation for Point Cloud Completion
 
-![plot](./fig/overview.png)
+![plot](./figs/overview.png)
 
 ## Installation
 
