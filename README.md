@@ -69,4 +69,4 @@ To train the model, you need to follow these steps:
     
 ## References
 
-Thank you [AnchorFormer](https://github.com/chenzhik/AnchorFormer), [Point Transformer](https://github.com/POSTECH-CVLab/point-transformer), and [PoinTr](https://github.com/yuxumin/PoinTr) for your wonderful code.
+Thank you [AnchorFormer](https://github.com/chenzhik/AnchorFormer), [PointTransformer](https://github.com/POSTECH-CVLab/point-transformer), and [PoinTr](https://github.com/yuxumin/PoinTr) for your wonderful code.
