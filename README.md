@@ -48,7 +48,7 @@ To train the model, you need to follow these steps:
 4. To initiate the training process, execute the following command:
 
    ```
-   python train.py --pretrained pretrained/PCN/CenFormer/best.pt --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
+   python train.py --car False --batch-size 8 --model-name CenFormer --epoch 401 --num-pred 16384
    ```
 
    Parameters:
