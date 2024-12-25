@@ -100,18 +100,18 @@ seed_everything()
 # Train cofig
 train_config = Config()
 train_config.subset = "train"
-train_config.PARTIAL_POINTS_PATH = f"../code/PCN/{train_config.subset}/partial"
-train_config.COMPLETE_POINTS_PATH = f"../code/PCN/{train_config.subset}/complete"
-train_config.CATEGORY_FILE_PATH = "../code/PCN/PCN.json"
+train_config.PARTIAL_POINTS_PATH = f"PCN/{train_config.subset}/partial"
+train_config.COMPLETE_POINTS_PATH = f"PCN/{train_config.subset}/complete"
+train_config.CATEGORY_FILE_PATH = "PCN/PCN.json"
 train_config.N_POINTS = int(args.num_pred)
 train_config.CARS = False
 
 # Valid cofig
 val_config = Config()
 val_config.subset = "val"
-val_config.PARTIAL_POINTS_PATH = f"../code/PCN/{val_config.subset}/partial"
-val_config.COMPLETE_POINTS_PATH = f"../code/PCN/{val_config.subset}/complete"
-val_config.CATEGORY_FILE_PATH = "../code/PCN/PCN.json"
+val_config.PARTIAL_POINTS_PATH = f"PCN/{val_config.subset}/partial"
+val_config.COMPLETE_POINTS_PATH = f"PCN/{val_config.subset}/complete"
+val_config.CATEGORY_FILE_PATH = "PCN/PCN.json"
 val_config.N_POINTS = int(args.num_pred)
 val_config.CARS = False
 

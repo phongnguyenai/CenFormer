@@ -79,7 +79,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=15,
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--cate", help="categories", default="airplane")
-parser.add_argument("--pretrained", help="path to pretrained model", default="pretrained/PCN/CenFormer/best.pt")
+parser.add_argument("--pretrained", help="path to pretrained model", default="pretrained/PCN/best.pt")
 
 args = parser.parse_args()
 
