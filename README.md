@@ -41,7 +41,7 @@ To make predictions, follow these steps:
    --pretrained (str) path to the pretrained model.
    ```
 
-![plot](./figs/visualization.png)
+![plot](./figs/PCN.png)
 
 ### 3.2. Training
 
