@@ -2,6 +2,10 @@
 
 ![plot](./figs/overview.jpg)
 
+## Revision 1
+
+We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained model can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
+
 ## Installation
 
 We provide instructions for creating a conda environment for training and predicting. (Note that we use CUDA Version 11.8).
@@ -16,13 +20,13 @@ To make predictions, follow these steps:
 
 1. Download the test dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/test.tar.gz?csf=1&web=1&e=Sn6rpK). Extract it to the folder `./PCN/test/`.
 
-2. Download the pretrained weight (**best.pt**) from [this link](https://uowmailedu-my.sharepoint.com/:u:/g/personal/ttpn997_uowmail_edu_au/EWcJcmV2ruNKsNfQiGLIMUgBvOL1s5fa6zA7rcIIrN33Ug?e=lcbOyE). Then put the pretrained weight in the folder `./pretrained/CenFormer/`.
+2. Download the pretrained weight (**pretrained/PCN/best.pt**) from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU). Then put the pretrained weight in the folder `./pretrained/PCN/`.
 
 
 3. Run the following command to perform predictions:
 
     ```
-    python predict.py --cate airplane --pretrained pretrained/PCN/CenFormer/best.pt
+    python predict.py --cate airplane --pretrained pretrained/PCN/best.pt
     ```
 
     Parameters:
