@@ -6,6 +6,8 @@
 
 We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained model can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
 
+To download datasets, please check PoinTr (https://github.com/yuxumin/PoinTr/tree/master).
+
 ## Installation
 
 We provide instructions for creating a conda environment for training and predicting. (Note that we use CUDA Version 11.8).
