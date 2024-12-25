@@ -4,7 +4,7 @@
 
 ## 1. Revision 1
 
-We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained model can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
+We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained models can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
 
 To download datasets, please check PoinTr (https://github.com/yuxumin/PoinTr/tree/master).
 
