@@ -16,7 +16,9 @@ We provide instructions for creating a conda environment for training and predic
 sh ./env.sh
 ```
 
-## Prediction
+## Sample code on PCN dataset
+
+### Prediction
 
 To make predictions, follow these steps:
 
@@ -41,7 +43,7 @@ To make predictions, follow these steps:
 
 ![plot](./figs/visualization.png)
 
-## Training
+### Training
 
 To train the model, you need to follow these steps:
 
