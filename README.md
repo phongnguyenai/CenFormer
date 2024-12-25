@@ -2,13 +2,13 @@
 
 ![plot](./figs/overview.jpg)
 
-## Revision 1
+## 1. Revision 1
 
 We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained model can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
 
 To download datasets, please check PoinTr (https://github.com/yuxumin/PoinTr/tree/master).
 
-## Installation
+## 2. Installation
 
 We provide instructions for creating a conda environment for training and predicting. (Note that we use CUDA Version 11.8).
 
@@ -16,9 +16,9 @@ We provide instructions for creating a conda environment for training and predic
 sh ./env.sh
 ```
 
-## Sample code on PCN dataset
+## 3. Sample code on PCN dataset
 
-### Prediction
+### 3.1. Prediction
 
 To make predictions, follow these steps:
 
@@ -43,7 +43,7 @@ To make predictions, follow these steps:
 
 ![plot](./figs/visualization.png)
 
-### Training
+### 3.2. Training
 
 To train the model, you need to follow these steps:
 
