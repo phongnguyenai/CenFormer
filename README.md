@@ -4,7 +4,7 @@
 
 ## 1. Revision 1
 
-We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained models can be found [here](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU).
+We have updated the code and pretrained models for KITTI dataset and ShapeNet dataset. All the pre-trained models can be found [here](https://uowmailedu-my.sharepoint.com/:u:/g/personal/ttpn997_uowmail_edu_au/IQBu3Z4DmFfGRLSpq7MXT4T7AW6rL72GaIb4IdoZoeUHSBE?e=PxKKUo).
 
 To download datasets, please check PoinTr (https://github.com/yuxumin/PoinTr/tree/master).
 
@@ -22,9 +22,9 @@ sh ./env.sh
 
 To make predictions, follow these steps:
 
-1. Download the test dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/test.tar.gz?csf=1&web=1&e=Sn6rpK). Extract it to the folder `./PCN/test/`.
+1. Download the test dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/supplementary-papers/CenFormer/test.tar.gz?csf=1&web=1&e=RXWgkj). Extract it to the folder `./PCN/test/`.
 
-2. Download the pretrained weight (**pretrained/PCN/best.pt**) from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/dataset/ATT-Net/pretrained.zip?csf=1&web=1&e=UeRTdU). Then put the pretrained weight in the folder `./pretrained/PCN/`.
+2. Download the pretrained weight (**pretrained/PCN/best.pt**) from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/supplementary-papers/CenFormer/best.pt?csf=1&web=1&e=2rG5pI). Then put the pretrained weight in the folder `./pretrained/PCN/`.
 
 
 3. Run the following command to perform predictions:
@@ -47,9 +47,9 @@ To make predictions, follow these steps:
 
 To train the model, you need to follow these steps:
 
-1. Download the validation dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/g/personal/ttpn997_uowmail_edu_au/EbxYcKtV_ahOpaAvq-A-9ZwBOqabr_5nddl7mWwhWJJ_Rw?e=FSiE7A).
+1. Download the validation dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/supplementary-papers/CenFormer/val.tar.gz?csf=1&web=1&e=NLNvxX).
 
-2. Download the training dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/g/personal/ttpn997_uowmail_edu_au/EeffEPj7HgpGhkGQVshxqWwBRz6bGUjLmirj79GgFflyCA?e=HhemQE).
+2. Download the training dataset from [this link](https://uowmailedu-my.sharepoint.com/:u:/r/personal/ttpn997_uowmail_edu_au/Documents/supplementary-papers/CenFormer/train.tar.gz?csf=1&web=1&e=M05LN7).
 
 3. After downloading, extract the validation and training dataset files to the folders `./PCN/train/` and `./PCN/val/`, respectively.
 
